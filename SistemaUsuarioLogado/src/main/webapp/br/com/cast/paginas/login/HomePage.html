@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title>Inicio - SDUL</title>
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+</head>
+<body>
+	<div id="hd">
+		<div id="logo">
+			<h1>Sistema Distância Usuário Logado</h1>
+		</div>
+	
+	</div>
+	<div id="bd">
+	
+	<form wicket:id="formularioHome">
+				<label wicket:id = "mensagem"></label>
+				<label wicket:for = "loginEntra">Login</label>
+				<input wicket:id = "loginEntra" type="text">
+				<label wicket:for = "senhaEntra">Senha</label>
+				<input wicket:id = "senhaEntra" type="text">
+		<input type = "submit" wicket:id = "entrar" value="Entrar"/> 
+				<hr width=95%>
+			
+				<fieldset>
+				
+				<legend>Cadastre-se</legend>
+				
+				<label wicket:for = "nome">Nome</label>
+				<input wicket:id = "nome" type="text"/><br/><br/>
+				<label wicket:for = "genero">Gênero</label>
+				<div wicket:id = "genero"></div><br/>
+				<label wicket:for = "dataNascimento">Nascimento</label>
+				<input wicket:id = "dataNascimento" type="text"/><br/><br/>
+				<label wicket:for = "cpf">Cpf</label>
+				<input wicket:id = "cpf" type="text"/><br/><br/>
+				<label wicket:for = "login">Login</label>
+				<input wicket:id = "login" type="text"><br/><br/>
+				<label wicket:for = "senha">Senha</label>
+				<input wicket:id = "senha" type="text"><br/><br/>
+				
+				<input type = "submit" wicket:id = "cadastrar" value="Cadastrar"/>				
+				</fieldset>
+				<p align="center">Copyright @ Cast - Fortaleza 2013</p>
+	</form>
+	
+	</div>
+
+	
+</body>
+
+		
+</html>

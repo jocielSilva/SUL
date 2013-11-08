@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title>Consulta - SDUL</title>
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+</head>
+<body>
+	<div id="hd">
+		<div id="logo">
+			<h1>Consulta usuário</h1>
+		</div>
+	</div>
+	<div id="bd">
+	
+	<form wicket:id="formularioConsulta">
+	<div align="right">
+	<input wicket:id = "sair" type="submit" value="Sair" />
+	</div>
+	<fieldset>
+	<legend>Filtro</legend>
+	<label wicket:for = "nome">Nome</label>
+	<input wicket:id = "nome" type="text"/><br/><br/>
+	<label>Estado</label>
+	<select wicket:id = "estado"></select>
+	
+	<div wicket:id = "comboCidade">
+	<label>Cidade</label>
+	<select wicket:id = "cidade"></select>
+	</div><br/><br/>
+	<input wicket:id = "opcao" type="checkbox">
+	<label>Opções avançadas</label><br/><br/>
+	
+	<div wicket:id = "distanciaMaxima">
+	<label wicket:for ="distancia">Distância Máxima	</label>
+	<input wicket:id = "distancia" type="text"/>
+	</div><br/><br/>
+	
+	<input wicket:id = "filtro" type="submit" value="Filtrar"/>
+	<input wicket:id = "btRelatorio" type="submit" value="Gerar Relatorio"/>
+	
+	</fieldset>
+	
+		<br/><br/>	
+		<div wicket:id="panelConsulta"></div>
+		
+		<p align="center">Copyright @ Cast - Fortaleza 2013</p>
+	</form>
+	
+	</div>
+	
+	
+</body>
+
+	
+	
+</html>

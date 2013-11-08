@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title>Cadastro - SDUL</title>
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+</head>
+<body>
+	<div id="hd">
+		<div id="logo">
+			<h1>Cadastro contato</h1>
+		</div>
+	</div>
+	<div id="bd">
+	
+	<form wicket:id="formularioCadastro">
+	
+				<label wicket:id = "mensagem"></label>
+				
+				<fieldset>
+				
+				<legend>Informações de Contado</legend>
+				
+				<label wicket:for = "cep">CEP</label>
+				<input wicket:id = "cep" type="text"/><br/><br/>
+				<label wicket:for = "logradouro">Logradouro</label>
+				<input wicket:id = "logradouro" type="text"/><br/><br/>
+				<label wicket:for = "bairro">Bairro</label>
+				<input wicket:id = "bairro" type="text"/><br/><br/>
+				<label wicket:for = "complemento">Complemento</label>
+				<input wicket:id = "complemento" type="text"/><br/><br/>
+				<label wicket:for = "cidade">Cidade</label>
+				<select wicket:id ="cidade"></select><br/><br/>
+				<fieldset>
+				<legend>Email(s)</legend>
+				<label wicket:for = "email">Endereço</label>
+				<input wicket:id = "email" type="text"/>
+				<!-- <div wicket:id="email"></div> -->
+				<input type = "button" wicket:id = "addEmail" value="+"/>
+				</fieldset>
+				
+				<fieldset>
+				<legend>Telefones</legend>
+				<label wicket:for = "numero">Número</label>
+				<select wicket:id = "ddd"></select>
+				<input wicket:id = "numero" type="text"/>
+				<!-- <div wicket:id="novoNumero"></div> -->
+				<input type = "button" wicket:id = "addNumero" value="+"/>
+				</fieldset> 				
+				
+				<input type = "submit" wicket:id = "confirmar" value="Confirmar"/>
+				
+				</fieldset>
+				<p align="center">Copyright @ Cast - Fortaleza 2013</p>
+	</form>
+	
+	</div>
+	
+	
+	
+</body>
+
+</html>
